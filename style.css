@@ -12,9 +12,7 @@ body {
   font-family: "Oxygen", sans-serif;
   font-family: "Rubik", sans-serif;
 }
-footer {
-  text-align: center;
-}
+
 div {
   display: block;
   /* border: 1px solid rebeccapurple; */
@@ -27,6 +25,7 @@ main {
   max-height: 70vh;
 }
 footer {
+  text-align: center;
   max-height: 10vh;
   position: fixed;
   bottom: 0%;
