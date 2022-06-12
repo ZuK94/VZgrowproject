@@ -7,36 +7,57 @@
     <title>Home page</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
-    <header class="flex-container header">
-      <nav class="flex-item">
-        <ul>
-          <li><a href="index.html" alt="home page">דף הבית</a></li>
-          <li><a href="./about.html" alt="about">מי אנחנו</a></li>
-          <li><a href="./contact.html" alt=" contact">יצירת קשר</a></li>
-        </ul>
-      </nav>
-      <div>
-        <h1 class="flex-item">הבית לצמיחה כלכלית</h1>
-        <h2 class="flex-item">ייעוץ משכנתאות</h2>
-      </div>
-      <div></div>
-      <div class="logo flex-item">
-        <img src="media/logo.png" alt="logo" />
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" alt="home page">דף הבית</a></li>
+        <li><a href="./about.html" alt="about">מי אנחנו</a></li>
+        <li><a href="./contact.html" alt=" contact">יצירת קשר</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="flex-container row space-between">
+        <div class="headers">
+          <h1 class="flex-item">הבית לצמיחה כלכלית</h1>
+          <h2 class="flex-item">ייעוץ משכנתאות</h2>
+        </div>
+        <div class="logo">
+          <div class="flex-item">
+            <img src="media/logo.png" alt="logo" />
+          </div>
+        </div>
       </div>
     </header>
     <main class="flex-container">
-      <div>
-        <p>יעוץ משכנתאות בדרך שלך והידע שלנו</p>
+      <div class="margin-top">
+        <div id="believe">
+          <article>
+            <h2 class="orange">אנחנו דוגלים ב...</h2>
+            <h3 class="orange">יעוץ משכנתאות בדרך שלך והידע שלנו</h3>
+            <p class="orange">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              odit non saepe maiores expedita molestiae adipisci eius,
+              consectetur eveniet quasi tempore, blanditiis, autem recusandae
+              tenetur atque dignissimos ut nulla? Doloremque! Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Ab repellat, est
+              necessitatibus ipsam ad nulla quidem architecto quo cupiditate at
+              adipisci voluptas fugit obcaecati optio blanditiis quis corporis
+              fuga deleniti.
+            </p>
+          </article>
+        </div>
       </div>
       <div>
         <p>תוכן כתוב כלשהו שיגרום לי להשאיר פרטים</p>
       </div>
       <div>
-        <button>לקבלת פרטים נוספים לחץ כאן</button>
+        <button type="button" class="myButton">
+          <a href="contact.html">לקבלת פרטים נוספים לחץ כאן</a>
+        </button>
       </div>
     </main>
-    <footer>
+    <footer class="margin-top">
       <address>
         VZecogrow By: valerya zyulkovsky kiryat yam israel
         <hr />

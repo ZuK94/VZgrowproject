@@ -8,52 +8,70 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="flex-container header">
-      <nav class="flex-item">
-        <ul>
-          <li><a href="index.html" alt="home page">דף הבית</a></li>
-          <li><a href="./about.html" alt="about">מי אנחנו</a></li>
-          <li><a href="./contact.html" alt=" contact">יצירת קשר</a></li>
-        </ul>
-      </nav>
-      <div>
-        <h1 class="flex-item">הבית לצמיחה כלכלית</h1>
-        <h2 class="flex-item">ייעוץ משכנתאות</h2>
-      </div>
-      <div></div>
-      <div class="logo flex-item">
-        <img src="media/logo.png" alt="logo" />
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" alt="home page">דף הבית</a></li>
+        <li><a href="./about.html" alt="about">מי אנחנו</a></li>
+        <li><a href="./contact.html" alt=" contact">יצירת קשר</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="flex-container row space-between">
+        <div class="headers">
+          <h1 class="flex-item">הבית לצמיחה כלכלית</h1>
+          <h2 class="flex-item">ייעוץ משכנתאות</h2>
+        </div>
+        <div class="logo">
+          <div class="flex-item">
+            <img src="media/logo.png" alt="logo" />
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <form action="https://formspree.io/f/xknyynkq" method="POST">
-        <div class="contact">
+        <div class="contact flex-container margin-top">
           <h2>נשמח ליצור איתכם קשר</h2>
           <p>יש למלא את הפרטים הבאים</p>
-          <label for="pName">שם מלא</label>
-          <input
-            type="text"
-            name="שם"
-            id="pName"
-            placeholder="שם מלא"
-            required
-          /><label for="pNum">מספר טלפון</label>
-          <input
-            type="tel"
-            name="טלפון"
-            id="pNum"
-            placeholder="מס' טלפון"
-            required
-          /><label for="email">כתובת דואל</label>
-          <input
-            type="email"
-            name="Email"
-            id="email"
-            placeholder="כתובת דואל"
-          />
-          <button type="submit">צרו איתי קשר!</button>
+          <div class="input">
+            <label for="pName">שם מלא</label>
+            <input
+              type="text"
+              name="שם"
+              id="pName"
+              placeholder="שם מלא"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="pNum">מספר טלפון</label>
+            <input
+              type="tel"
+              name="טלפון"
+              id="pNum"
+              placeholder="מס' טלפון"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="email">כתובת דואל</label>
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="כתובת דואל"
+            />
+          </div>
+          <button type="submit" class="myButton">צרו איתי קשר!</button>
         </div>
       </form>
     </main>
+    <footer class="margin-top flex-container">
+      <address>
+        VZecogrow By: valerya zyulkovsky kiryat yam israel
+        <hr />
+        made by ZuK
+      </address>
+    </footer>
   </body>
 </html>

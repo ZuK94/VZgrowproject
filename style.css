@@ -1,35 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kanit:ital,wght@1,300&family=Oxygen&family=Rubik&display=swap");
+
 body {
   margin: 0;
   direction: rtl;
   width: 100vw;
   height: 100vh;
+  padding: 5px;
+  overflow: hidden;
+  font-family: "Dancing Script";
+  font-family: "Kanit", sans-serif;
+  font-family: "Oxygen", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+footer {
+  text-align: center;
+}
+div {
+  display: block;
+  /* border: 1px solid rebeccapurple; */
 }
 header {
   height: 20vh;
+  min-height: 102px;
 }
 main {
-  height: 70vh;
+  max-height: 70vh;
 }
 footer {
-  height: 10vh;
+  max-height: 10vh;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
 }
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   width: 100vw;
-  align-items: center;
-  border: 3px solid rebeccapurple;
+  height: inherit;
+
+  /* border: 3px solid rebeccapurple; */
 }
-.flex-container > .flex-item {
+.flex-item {
   display: flex;
-  align-self: center;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: center;
 }
+
+.nav {
+  text-align: center;
+  width: 100%;
+  background-color: #1c1d1cb0;
+}
+
 ul {
-  list-style: none;
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+
+  padding: 8px 22px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #e35422;
+  background-color: #1c1d1c8f;
 }
 .logo {
-  height: inherit;
+  display: block;
+}
+
+.logo img {
+  max-height: 20vh;
+  max-width: 100%;
+  min-height: 100px;
+  position: sticky;
+  left: 0;
+}
+.row {
+  flex-direction: row;
+}
+.space-between {
+  justify-content: space-between;
+}
+.headers {
+  margin: auto auto;
+  color: #e35422;
+  text-shadow: 2px 2px 4px #221e1e59;
+}
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.6em;
+  text-shadow: 2px 2px 4px #221e1e59;
+  text-align: center;
+}
+button {
+  margin: 0.7em;
+}
+a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: rgb(192, 15, 15);
+  text-decoration: none;
+}
+#believe {
+  width: 45%;
+  padding: 12px;
+  padding-left: 40px;
+  height: 300px;
+  background-color: #235329;
+  border-top-left-radius: 5em;
+  border-bottom-left-radius: 5em;
+  transition: 1.5s;
+  overflow: hidden;
+}
+
+#believe:hover {
+  width: 85%;
+}
+
+.orange {
+  color: #e35422;
+}
+.contact {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input {
+  margin-top: 10px;
+}
+
+.myButton {
+  box-shadow: inset 0px 1px 0px 0px #fce2c1;
+  background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+  background-color: #ffc477;
+  border-radius: 6px;
+  border: 1px solid #eeb44f;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #cc9f52;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+  background-color: #fb9e25;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+#pulse {
+  display: flex;
+  animation-name: pulse;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  line-height: 2em;
+  padding: 10px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes pulse {
+  from {
+    font-size: initial;
+    color: black;
+  }
+  50% {
+    font-size: 200%;
+    color: #fb9e25;
+  }
+  to {
+    font-size: initial;
+    color: black;
+  }
+}
+.findMyself {
+}
+.margin-top {
+  margin-top: 20px;
 }
